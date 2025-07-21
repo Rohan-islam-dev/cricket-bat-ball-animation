@@ -12,6 +12,9 @@
             transform: rotate(-60deg);
             transform-origin: top right;
         }
+        .bat{
+            transition: transform 0.1s;
+        }
         .ball{
             background-color: red;
             width: 50px;
@@ -19,7 +22,12 @@
             border-radius: 50%;
             position: relative;
             left: 516px;
+            transition: transform 2s ease-in-out 0.2s;
         }
+        .field:hover .ball{
+           transform: translate(1000px , -600px);
+        }
+        
     </style>
 
 </head>
